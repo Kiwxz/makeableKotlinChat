@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3A0A0"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtRegisterUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#C0C0C0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtRegisterPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="8sp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#C0C0C0"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterUserName"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterUserName"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterUserName" />
+
+    <Button
+        android:id="@+id/btnRegisterUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/register_new_user"
+        app:backgroundTint="#503737"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterPassword" />
+
+    <TextView
+        android:id="@+id/txtAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/already_have_an_account"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegisterUser"
+        app:layout_constraintStart_toStartOf="@+id/btnRegisterUser"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegisterUser" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

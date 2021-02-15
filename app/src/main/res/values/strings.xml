@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MakeableKotlinChat</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register_new_user">Register new user</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="back_to_registration">Back to registration</string>
+</resources>
