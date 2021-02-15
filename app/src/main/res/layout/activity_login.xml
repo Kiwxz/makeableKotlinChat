@@ -4,28 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3A0A0" >
+    android:background="#B3A0A0"
+    tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/txtUserName"
+        android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:background="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         android:lineSpacingExtra="8sp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textColor="#000000"
         android:textColorHint="#C0C0C0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
         android:autofillHints="" />
 
     <EditText
@@ -33,17 +37,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@android:color/white"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:lineSpacingExtra="8sp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textColor="#000000"
         android:textColorHint="#C0C0C0"
-        app:layout_constraintEnd_toEndOf="@+id/txtUserName"
-        app:layout_constraintStart_toStartOf="@+id/txtUserName"
-        app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -66,4 +71,5 @@
         app:layout_constraintEnd_toEndOf="@+id/btnLogin"
         app:layout_constraintStart_toStartOf="@+id/btnLogin"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

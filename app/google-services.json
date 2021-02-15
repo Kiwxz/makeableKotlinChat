@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "396701588335",
+    "project_id": "makeablekotlinchat",
+    "storage_bucket": "makeablekotlinchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396701588335:android:6e59aa7973d30c2d9ee69a",
+        "android_client_info": {
+          "package_name": "com.example.makeablekotlinchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396701588335-bp70lue1pdupeodo8sked3ch750n6n16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBADCxcTLz5WRi5zzsv0oWk9JMFMj3858w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396701588335-bp70lue1pdupeodo8sked3ch750n6n16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

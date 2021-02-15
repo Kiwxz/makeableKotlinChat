@@ -15,35 +15,54 @@
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:background="@android:color/white"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
         android:lineSpacingExtra="8sp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textColor="#000000"
         android:textColorHint="#C0C0C0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="8sp"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#C0C0C0"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterUserName"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterUserName"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterUserName" />
 
     <EditText
         android:id="@+id/txtRegisterPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@android:color/white"
+        android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:lineSpacingExtra="8sp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textColor="#000000"
         android:textColorHint="#C0C0C0"
-        app:layout_constraintEnd_toEndOf="@+id/txtRegisterUserName"
-        app:layout_constraintStart_toStartOf="@+id/txtRegisterUserName"
-        app:layout_constraintTop_toBottomOf="@+id/txtRegisterUserName" />
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <Button
         android:id="@+id/btnRegisterUser"
