@@ -17,6 +17,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth: FirebaseAuth
+    private val db = FirebaseDatabase.getInstance("https://makeablekotlinchat-default-rtdb.europe-west1.firebasedatabase.app/")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,22 +62,20 @@ class RegisterActivity : AppCompatActivity() {
                 }
         }
     }
+
     // Sends already registered users to login screen
     private fun sendToLoginScreen() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 
+    // Creates reference to database and saves user information
     private fun saveUserToDatabase() {
-        // Creates reference to database and saves user information
         val uid = FirebaseAuth.getInstance().uid!!
-        val db = FirebaseDatabase.getInstance("https://makeablekotlinchat-default-rtdb.europe-west1.firebasedatabase.app/")
         val currentUserRef = db.getReference("/users/$uid")
         val userName = binding.txtRegisterUserName.text.toString()
         val userEmail = binding.txtEmail.text.toString()
-
-        val user =
-            User(uid, userName, userEmail)
+        val user = User(uid, userName, userEmail)
         currentUserRef.setValue(user)
         // If successful, user is taken to message page
             .addOnSuccessListener {
