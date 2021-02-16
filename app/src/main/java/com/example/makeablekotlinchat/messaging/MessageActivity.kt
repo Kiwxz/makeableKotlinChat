@@ -76,6 +76,7 @@ class MessageActivity() : AppCompatActivity() {
 // Makes sure the correct layout is set for sent and received messages
 // Adds text to the message bubbles
 class SendMessageItem(val message: Message): Item<GroupieViewHolder>() {
+
     override fun getLayout() = R.layout.message_outgoing
 
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
